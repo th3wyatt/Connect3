@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/centerLeft"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/topLeft"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/topCenter"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="36dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/centerCenter"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="180dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/centerRight"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="180dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/topRight"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="36dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/bottomCenter"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="296dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/bottomRight"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="296dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="389dp"
+        android:layout_height="297dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginTop="32dp"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ttt" />
+
+    <ImageView
+        android:id="@+id/bottomLeft"
+        android:layout_width="111dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="296dp"
+        android:alpha="0"
+        android:onClick="dropDown"
+        android:tag="bottomLeft"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:srcCompat="@drawable/blue" />
+
+    <TextView
+        android:id="@+id/currentTurn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Current Turn:  Red"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board" />
+</android.support.constraint.ConstraintLayout>
